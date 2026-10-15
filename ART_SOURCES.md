@@ -162,3 +162,16 @@
 - `mansion`：`exec-612905e8-b00f-4743-87b6-86c15feeb19c.png`，1672×941，SHA-256 `03ccb0ec5d72ec5fb187f53479315b7350f1119561a9a994ff6411ceb2da527c`。
 
 前導影片原本第16–20秒仍嵌舊背包豬場景；本次改用已修正的原創山洞圖，FFmpeg固定鏡頭淡入淡出，1920×1080、24fps、20秒。前四幕以既有4秒片段保留，最後一幕重製；未新增外部影片。新MP4 SHA-256 `a6888e0b0ea5455afa415e331ac5ae3a7753d6020761c4ccdf3671cda8a9d888`。
+
+## 熊／鹿失敗路線與保鑣造型統一（2026-10-15）
+
+來源為 image_gen 編修本專案原創圖、或依本專案原創保鑣圖新生成；無外部素材，未要求仿照藝術家、影劇角色或真人。保鑣設定：38歲、義大利裔、橄欖膚色、黑色後梳短髮、濃眉、較高且略彎鼻樑、方正下顎、淡鬍渣；保留黑開襟衫與頭頂墨鏡，與年輕捲髮記者區分。熊路線：原創誇張喜劇畫面，保鑣拿防熊噴霧撤退；鹿路線改為保鑣，無登山包。其餘只更新保鑣臉部，維持角色、繩索、項鍊、皇冠與獎金故事狀態。WebP quality92內嵌。
+
+- `lost`：`exec-26350833-a778-4b94-94ae-6410613aeb0d.png`，1672×941；SHA-256 `c7c351d2b40d2cf0248a12d484b0f85b9950dd5b39f9f6a15ee2b1dfdc885448`。
+- `bear`：`exec-dcc3df6c-cef1-4607-8e2f-7fa9aabf6b54.png`，1672×941；SHA-256 `ff7a86abc9bccdbc9fc3ece0529086d9fc1e6994b4ef0972a3a59c116fe285b9`。
+- `captured`：`exec-5aaf033e-fea4-4bc1-9335-c0fd5032ba47.png`，1672×941；SHA-256 `eecc3eef20f8a8c38a10ae9d69f2e73c4b2007e6e18216a89176c9e3ff199ad2`。
+- `cake_caught`：`exec-1460dc40-c2e4-4542-b907-98d227a69aba.png`，1672×941；SHA-256 `0f992c200b44ce365a9e9de22b1e958c091fff7518a5bc8b4fbc39ab361a2d8f`。
+- `burger_eating`：`exec-b30d3765-f0fa-4ce1-a962-be41dd785f0e.png`，1672×941；SHA-256 `d0805dba13d3e7b2dd1eea8f7808ed2bb26230925227f9973bf2b8d9c525d860`。
+- `journey`：`exec-8f41171f-60f4-4f4e-9b81-2d8bd81f6289.png`，1672×941；SHA-256 `f1a0ea7b4250f280833bbe91a35b4c75d880e4ccbb4c365eca59bd308636c0b9`。
+- `free`：`exec-7b5854e2-d932-43ad-8fc5-ebf8cd1c8202.png`，1672×941；SHA-256 `c82080524e220506312a024490747183add7d9dcb426625a182bbd0d3679e5d7`。
+- `mansion`：`exec-19d8f0eb-ad44-4b39-be63-f11141e6d05a.png`，1672×941；SHA-256 `f9829aab69505218e1c9f81c4711d2c6816ef782c14444cd97406100901de484`。
