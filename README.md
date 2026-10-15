@@ -1,18 +1,18 @@
 # 豬事不妙！The Great Pig Escape
 
-**目前完成版：V1-14。V2是較早的動畫試作，並非最新V1的升級完成版。**
+**目前完成版：V1-15。V2是較早的動畫試作，並非最新V1的升級完成版。**
 
 ## 專案文件
 
 - [遊戲規格書](SPEC.md)：故事、人物、關卡判定、操作、存檔、技術、美術與驗收要求。
-- [修改履歷](CHANGELOG.md)：V1-1～V1-14、V2各版需求、實際變更、驗證與限制。
+- [修改履歷](CHANGELOG.md)：V1-1～V1-15、V2各版需求、實際變更、驗證與限制。
 - [原創素材紀錄](ART_SOURCES.md)：圖像來源、生成摘要與檔案雜湊。
 
 遊戲本體為單一 `index.html`；文件與遊戲程式分開維護。
 
 ## 版本怎麼選
 
-GitHub上方的分支下拉選單 → **Tags** → 選 **V1-1、V1-2……V1-14或V2**。版本依實際開發順序編號，不以日期辨認。原本的分支與 `pig-v1-stable` 標籤都保留。
+GitHub上方的分支下拉選單 → **Tags** → 選 **V1-1、V1-2……V1-15或V2**。版本依實際開發順序編號，不以日期辨認。原本的分支與 `pig-v1-stable` 標籤都保留。
 
 版本標籤固定指向當時的遊戲程式。舊標籤內的README會保留當時文字；辨認目前版本請以本頁索引為準。只整理文件不會另外增加遊戲版號。
 
@@ -20,7 +20,8 @@ GitHub上方的分支下拉選單 → **Tags** → 選 **V1-1、V1-2……V1-14�
 
 | 版本 | 名稱 | 主要變更 | 程式提交 |
 |---|---|---|---|
-| [V1-14](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-14) **目前最新版** | 全場景保鑣定稿 | 全部11張相關圖統一小眼、銳利眼神、鷹勾鼻、黑色開襟衫與頭頂墨鏡；補齊同行鏡頭。 | [d0351a9](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/d0351a9) |
+| V1-15 **目前最新版** | 移除中文配音 | 移除所有語音合成與配音開關，保留場景背景音樂及原創音效。 | 對應標籤 `V1-15` |
+| [V1-14](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-14) | 全場景保鑣定稿 | 全部11張相關圖統一小眼、銳利眼神、鷹勾鼻、黑色開襟衫與頭頂墨鏡；補齊同行鏡頭。 | [d0351a9](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/d0351a9) |
 | [V1-13](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-13) | 熊／鹿失敗與保鑣區分 | 新增防熊噴霧失敗圖，鹿路線改保鑣，初步統一成熟保鑣造型。 | [fa8a5db](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/fa8a5db) |
 | [V1-12](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-12) | 前導與雙結局角色 | 修正實際MP4殘留的背包豬；湖畔與賞金結局加入保鑣和記者。 | [83a278f](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/83a278f) |
 | [V1-11](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-11) | 直接開始與高畫質羊圈 | 移除開始遊戲覆寫確認，替換羊群逃出羊圈的低解析度圖。 | [d3566b9](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/d3566b9) |
