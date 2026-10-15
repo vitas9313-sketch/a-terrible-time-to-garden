@@ -175,3 +175,21 @@
 - `journey`：`exec-8f41171f-60f4-4f4e-9b81-2d8bd81f6289.png`，1672×941；SHA-256 `f1a0ea7b4250f280833bbe91a35b4c75d880e4ccbb4c365eca59bd308636c0b9`。
 - `free`：`exec-7b5854e2-d932-43ad-8fc5-ebf8cd1c8202.png`，1672×941；SHA-256 `c82080524e220506312a024490747183add7d9dcb426625a182bbd0d3679e5d7`。
 - `mansion`：`exec-19d8f0eb-ad44-4b39-be63-f11141e6d05a.png`，1672×941；SHA-256 `f9829aab69505218e1c9f81c4711d2c6816ef782c14444cd97406100901de484`。
+
+## 保鑣全場景小眼與鷹勾鼻定稿（2026-10-15）
+
+來源：image_gen 使用本專案原創圖編修。先以鹿群場景確立原創角色定稿，再以同一定稿作為其餘場景的角色參考；沒有外部圖片、名人照片或既有作品／藝術家參照。定稿重點：成熟42歲、窄小深眼窩與銳利眼神、低濃眉、長而明顯彎曲的鷹勾鼻、重方下顎與短鬍渣；黑色開襟衫、強壯身材、頭頂墨鏡。年輕記者不採用此造型。
+
+覆核10張第三人稱場景，另修正蛋糕撲來的第一人稱黑袖；野果追豬畫面改由保鑣追趕，記者背包開啟鏡頭仍是記者的手。WebP quality92內嵌；遊戲程式與前導影片不因此變更。
+
+- `lost`：`exec-dcd3d3db-0ca5-466d-9728-121b0eda493a.png`，1672×941；SHA-256 `b4431860d4ef2cca9209f5a75d507c6647ba193774b48bf645dd0df14e269b1d`。
+- `bear`：`exec-7349f2b5-483e-4f54-bf44-a2a2e66d7912.png`，1672×941；SHA-256 `dac163dd59af6e54e5a0d765b4b4c9d910b95a19ad5bd0b329d21077237c53a7`。
+- `captured`：`exec-a5a8493d-dee4-4d61-bbd9-36920a7eb0be.png`，1672×941；SHA-256 `2ae12be604484fdfc5856c7006c8a82cb597a6fb77dcfbbbe703200d28b549b8`。
+- `cake_caught`：`exec-3d6dcc85-cd37-437c-9eed-73f98fd74c0f.png`，1672×941；SHA-256 `ae61caaa7fafec60a074f3cf251f208ec333eb32bfca71f954f37ed3609dcb65`。
+- `burger_eating`：`exec-00a71612-8937-460f-b3f3-10eb83cb5f92.png`，1672×941；SHA-256 `4a9a7e123cc1ffaa132b93bf237b731aef74cfafed83989f652957721c9c86f8`。
+- `burger_follow`：`exec-1994cfbf-ece2-4dcc-949b-00c79b2c261d.png`，1672×941；SHA-256 `a5a9f40fec27a6874ee8429b7bfaeeb6967a293bea8a4086811db444310d2654`。
+- `journey`：`exec-47e67d98-b614-4cb7-9814-201fdf15391c.png`，1672×941；SHA-256 `ee7ac29b4909b70b03a5373522c0c29b0e07c7479959fbb910c54d638eb861cd`。
+- `free`：`exec-b2926bed-e5f9-4f24-9c5b-991f70ce734a.png`，1672×941；SHA-256 `c01056b02b803c8ae550db1fdecdf34e884de11f84ebcb6fdc8098a889b59f33`。
+- `mansion`：`exec-fc848531-879b-41a2-a48a-264477a67df7.png`，1672×941；SHA-256 `05a0b596f9dfedba60484cd36eee4f1439031a2b16e5468fcadeeeb84bd53202`。
+- `escape`：`exec-3a3af019-2e25-4b0c-8b52-6434fffa119e.png`，1672×941；SHA-256 `8db70c0e16d5baef9925a6a4ed309363a1d0190bf115fcfbcdbc1fd0d4b7c7f4`。
+- `cake_rush`：`exec-a7cc785d-3ef7-4bff-a766-c9a8852dfa7a.png`，1672×941；SHA-256 `ebc3964235ba1c3a902d8030f0642d1b294230f4f1d068680c3f72fa2ec16de9`。
