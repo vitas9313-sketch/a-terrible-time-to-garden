@@ -101,3 +101,25 @@
 ## 固定鏡位序幕更新
 
 沿用本專案原創五幕來源圖，影片處理改為固定1920×1080構圖、每幕4秒、24fps、CRF19，只使用淡入淡出；移除FFmpeg zoompan。未新增或下載外部素材。
+
+## V1 年輕記者與清晰度更新（2026-10-15）
+
+八幅本專案原創圖透過image_gen作參考重製；單幅16:9、約1672×941、WebP quality92嵌入。共同提示摘要：原創電影動畫材質，克里斯為22歲成年西方男子，身形清瘦、波浪栗髮、年輕乾淨面容、疲憊且有求助感但有尊嚴，卡其登山衣褲／背包／相機；保持神豬、太陽獎牌與原鏡位。不以心理健康作笑點，不指定或模仿任何現有角色、電影或藝術家。
+
+- 場景 `camp_goats`：`exec-b9b8387a-df17-41d4-ae3e-ac6a0a45fb23.png`；SHA-256 `39d0e706ebc116aa4e9d0473585b0ba248d9f23b7f471932bdb605b92850563a`。
+
+- 場景 `camp_ready`：`exec-2a756f90-f32c-4279-8668-f5eb0d772aac.png`；SHA-256 `c2006846f5b6b7340fac7fdc874cb59e884d035f859da3d70ef90b3549c4ecb7`。
+
+- 場景 `camp_pig`：`exec-471b9575-8e2b-4e62-b81a-215c70027fa9.png`；SHA-256 `487f8115cb810b39599ecfeff783f415d4ef59f5520650d1256f65caf588dbb1`。
+
+- 場景 `camp_hiker`：`exec-b0151dd4-3201-45b2-84e1-ea13db84de3b.png`；SHA-256 `56b8fa0e8fb8c8a88887a3e1fda57cc470686f8fc79635ac70e54095705ff9bb`。
+
+- 場景 `camp_free`：`exec-9f2b411b-4d51-4871-bf72-a7c661e1fd7f.png`；SHA-256 `0defa4e3c8e2e6435fde20d5c17a038ad6261426baafc0c7ae975e34f50777a7`。
+
+- 場景 `reporter`：`exec-3ee4448d-83f7-4cda-80e1-44a35cc93b16.png`；SHA-256 `469deae242c3e087168045fb9dca385c1ce2efc1a205f30eebfc198217861bc4`。
+
+- 場景 `exit`：`exec-2900d53f-f09f-4fe6-9b44-ead51f486feb.png`；SHA-256 `4c4383520e352bfb06790897e769233e30bcaf79b89edd506890d76506169223`。
+
+- 場景 `free`：`exec-100ca1e1-dee0-4cee-ac9c-1419166be3d7.png`；SHA-256 `86d36ca9dbe4f48bf27366809fedfa1ca947af5cc63f9c1568f33c7d224f2eb9`。
+
+環境光、餘燼、蟲／蟻、落葉及DOM游標由程式原創。風、蟲鳴、火、道具音與怒吼為本作新寫Web Audio振盪器／噪音音效，不使用音效包。可選配音由使用者作業系統已安裝的本機zh-TW語音朗讀，不屬於本作錄製音檔，也沒有另行生成或使用任何名人／演員聲音。
