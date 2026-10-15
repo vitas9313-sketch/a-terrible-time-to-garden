@@ -123,3 +123,24 @@
 - 場景 `free`：`exec-100ca1e1-dee0-4cee-ac9c-1419166be3d7.png`；SHA-256 `86d36ca9dbe4f48bf27366809fedfa1ca947af5cc63f9c1568f33c7d224f2eb9`。
 
 環境光、餘燼、蟲／蟻、落葉及DOM游標由程式原創。風、蟲鳴、火、道具音與怒吼為本作新寫Web Audio振盪器／噪音音效，不使用音效包。可選配音由使用者作業系統已安裝的本機zh-TW語音朗讀，不屬於本作錄製音檔，也沒有另行生成或使用任何名人／演員聲音。
+
+## V1 開局、角色與漢堡分鏡修正（2026-10-15）
+
+來源：image_gen 編修本專案原創圖像，未下載外部素材、未指定既有作品或藝術家；保留原始 PNG，WebP quality 90 內嵌，不以單純放大舊縮圖宣稱解析度改善。提示詞摘要：翻覆豪華無人智能車；泥污、下垂嘴角的年輕記者；黑色開襟衫、頭頂墨鏡的強壯保鑣；吃漢堡與乖乖跟隨；湖畔抉擇、豪宅及空山洞。角色危機不血腥、沒有實際受傷。
+
+- `track`：`exec-0ddcb490-e06b-492a-ace2-2fc4d6ed331d.png`，1672×941；SHA-256 `0f47117991dba8cba302faf3403703bdb8b15b521aebc2054b6a3fc51558da91`。
+- `reporter`：`exec-7dda7c79-5a3d-44f2-9b86-27e9bbb016e9.png`，1672×941；SHA-256 `6ecb1a2680bcef0937759fbb1d171f545425846d03d98f43258f605d06a87982`。
+- `captured`：`exec-3c596770-7dec-4c38-a4df-307d8bb7aefe.png`，1672×941；SHA-256 `8ee5c0c0353655f92904351208be6472fcf2e33005112b4ac95e57c6e928833c`。
+- `cake_caught`：`exec-379f2a9b-31bb-4436-852d-72d4f3f07be4.png`，1672×941；SHA-256 `228a3ae3b0bcf2eb3f1a96969437d177f29699a8ee4cb206ce2fe352963d901e`。
+- `abandon`：`exec-6e83a3c7-dd13-424f-b3ff-85e853294a10.png`，1672×941；SHA-256 `75336b695f470240ad58b2a1949bd9ba45b4e9d6fc4fcbda7932a58fd7669b60`。
+- `burger_eating`：`exec-f9457e35-1173-4558-8dfa-9291b0f121de.png`，1672×941；SHA-256 `beb16630ed7d6e5ea8dffd7e7d36170883b2d8d75b2993b52a9de3b1daa6b117`。
+- `burger_follow`：`exec-c989e3d2-2189-4ae7-89db-6829b8ac4832.png`，1672×941；SHA-256 `351f2776777700eb74c36990ebe2a38f3820760911628c62f11e0cc669e0d19c`。
+
+- `camp_goats`：`exec-2682ffc2-5611-4761-81be-99541f304746.png`，1672×941；SHA-256 `0c64637dab776d4397b5e83b247b904a932a89dfe8e70477e999bd12536415a8`。
+- `camp_ready`：`exec-c1e3aa26-b2b2-41c8-8e2f-c763962c588b.png`，1672×941；SHA-256 `be7facbc4b99f4c19974b1084bcd951f7250b3f9b07c015bbb46c53c8ed219ba`。
+- `camp_pig`：`exec-de0fd682-c2f3-4aed-b93d-7791b9d5ac98.png`，1672×941；SHA-256 `94f4ab2b46036b199ddb64c9bbe8c46f358f540cf41bd31dffa5abfe236a0d13`。
+- `camp_hiker`：`exec-b0a8a4ce-7e38-4e4a-a6da-205802df9f47.png`，1672×941；SHA-256 `6918b25c676e81743ac9c19c88c5b95ea70d640b1f2467506d89b04df2ebac69`。
+- `camp_free`：`exec-3781df16-c585-42eb-946b-871735931f47.png`，1672×941；SHA-256 `556c2257d07af8a13e0e6f30e61ca3fd9e2c63c400c998c016f566bec92fcb29`。
+- `mansion`：`exec-b96d7e23-c99f-4e4a-b3d8-448b42b2636f.png`，1672×941；SHA-256 `9ca4f6b7d1e7a6b2b7f28d359110c988030289a25fd96332fefe1269a4242627`。
+- `journey`：`exec-c8562be5-a40e-4b0d-9ec2-4863eb5b5436.png`，1672×941；SHA-256 `68876282b276f322b85c95ba7dcb7a9b96f4f184431cb0d2f79c4f0c1acb80cc`。
+- `cave`：`exec-b217dde5-992f-4a75-8bd5-8aa3caa95849.png`，1672×941；SHA-256 `30da877fa5d1619b986241b772e097d131ae97fca791c32441e27478833040a3`。
