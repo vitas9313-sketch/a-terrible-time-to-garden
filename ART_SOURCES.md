@@ -144,3 +144,12 @@
 - `mansion`：`exec-b96d7e23-c99f-4e4a-b3d8-448b42b2636f.png`，1672×941；SHA-256 `9ca4f6b7d1e7a6b2b7f28d359110c988030289a25fd96332fefe1269a4242627`。
 - `journey`：`exec-c8562be5-a40e-4b0d-9ec2-4863eb5b5436.png`，1672×941；SHA-256 `68876282b276f322b85c95ba7dcb7a9b96f4f184431cb0d2f79c4f0c1acb80cc`。
 - `cave`：`exec-b217dde5-992f-4a75-8bd5-8aa3caa95849.png`，1672×941；SHA-256 `30da877fa5d1619b986241b772e097d131ae97fca791c32441e27478833040a3`。
+
+## 羊群逃出羊圈高解析度重製（2026-10-15）
+
+原創 image_gen 以本專案原創羊群場景作參照重新繪製，非單純放大低解析度舊圖。開門羊群、追羊守衛、仍受綁的神豬與髒污年輕記者，維持原構圖；無外部圖像或既有作品參照。
+
+- 原檔：`exec-e2a86e69-a58f-4078-8a3e-bdd8aae15327.png`
+- 尺寸：1672×941（舊圖 836×470）
+- SHA-256：`ae821a6a1c4c23dfbd9ddf95c63f225398d73af0317ad1d013118efdce20132d`
+- WebP quality 93，內嵌單一 HTML。
