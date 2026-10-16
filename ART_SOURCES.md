@@ -202,3 +202,13 @@
 - 內嵌WebP SHA-256：`e7707497069fe83f4a5d1d6321678721578f45acbb536f973c0e866e5d7d68ed`。
 - 記者嘴型：程式原創SVG疊層與CSS開闔，僅在記者開場對話顯示；不是完整人物逐格影片。
 - 成功／失敗旋律與長熊吼均為本專案Web Audio原創合成，未使用外部聲音素材或中文TTS。
+
+
+## V1-21：救援前近景與原畫嘴型
+
+- 以本專案reporter原創近景編修救援前專用圖：豬身體及前腿以粗麻繩綑綁，項鍊仍可見，豬改為擔憂閉嘴；記者嘴角下垂、閉嘴。
+- 再以該新圖生成僅嘴部微幅張開的第二狀態，保留五官、姿勢與背景；未指定任何既有作品或藝術家。
+- 網頁以CSS柔邊遮罩僅顯示第二張嘴部，有限時段交替並停頓，移除原SVG橢圓；不是完整角色逐格動畫或語音同步。
+- 原reporter圖與其他30張既有素材保留不變；未綁豬的reporter圖只用於豬獲救之後。
+- `reporter_bound`：生成檔 `/workspace/generated_images/exec-0c3c2cd9-6bc3-4844-9aaf-b5023450deee.png`；內嵌WebP 485098 bytes；SHA-256 `aab1b9354b9e4c620a7a361dbb3ac50f8bb484e584521c1f5b9631b59313961d`。
+- `reporter_bound_talk`：生成檔 `/workspace/generated_images/exec-2ef8fb9f-1a72-40ba-90ad-84fd289a60ec.png`；內嵌WebP 491746 bytes；SHA-256 `cba3a414f8fb8451e6bf69564b465120a191f80ca07023cb43dc417eda98fc87`。
