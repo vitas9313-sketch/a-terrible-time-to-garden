@@ -1,21 +1,25 @@
 # 修改履歷
 
-以遊戲版本編號記錄，不以日期分類。V1-22是目前完成版；V2為自V1-8分出的動畫試作。程式提交與標籤固定保留，不重寫歷史。
+以遊戲版本編號記錄，不以日期分類。V1-22是目前完成版；V2試作已依使用者要求移除Tag與分支，歷史說明保留供追溯。V1標籤不移動，不重寫歷史。
 
 ## 後續紀錄規則
 
-- 遊戲內容的新修改依序建立V1-15、V1-16等版本；V2續作另記錄其實際基底與差異。
+- 遊戲內容的新修改依序建立V1-15、V1-16等版本，不再維護V2試作。
 - 只改文件不增加遊戲版號。
 - 每版記錄需求、實際變更、真正執行的驗證、未完成項目及提交；修正舊缺陷時指出取代哪版行為。
 - 下列歷史摘要描述各版當時的狀態；現行要求以 [SPEC.md](SPEC.md) 為準。
 
 ## V1修改履歷
 
+<a id="v1-22"></a>
+
 ### V1-22｜還原上一版音樂
 
 - 依使用者要求直接修改main：音樂還原至音樂改動前的V1-19，撤回V1-20配樂bus、平滑包絡、限制器及額外開場提示；恢復靜音偏好，不要求開網頁即自動播放。
 - 保留V1-21新增的綑綁近景與原畫嘴型，以及其他故事、圖片、選項與重試流程。
 - 驗證：tone/startMusic/initAudio/stopMusic與V1-19逐字比對一致；Chromium檢查音樂啟動、靜音／恢復、開場提示移除、綑綁圖與新嘴型仍存在，無JS錯誤。未重新測全流程或實際喇叭聽感。
+
+<a id="v1-21"></a>
 
 ### V1-21｜修正救援前近景誤用與不自然嘴型
 
@@ -26,6 +30,8 @@
 - 實測Chromium：三段對話選圖、兩種割繩順序、豬獲救後切圖、棄救記者重試、第二關完成、減少動態及1920×1080／1440×900／1280×720對話框位置，無JS錯誤；張嘴／閉嘴定格逐張目視檢查。
 - 比對確認原31張圖、音樂與聲音程式、選擇／失敗／操作邏輯未更改。本輪未重新測三關全流程；嘴型是兩狀態輕量演出，不是完整人物影片或語音同步。
 
+<a id="v1-20"></a>
+
 ### V1-20｜第1點重驗：開場音樂實際輸出
 
 - 原因：前輪僅驗證計時器與AudioContext，未量測配樂輸出；舊音樂靜音偏好仍可能讓開場無聲。撤回「已有觸發就符合聽感」的驗收方式。
@@ -34,6 +40,8 @@
 - 真測：Chromium需使用者啟動及允許自動播放兩種政策；標題／前導RMS約0.117、峰值約0.30，靜音250ms後波形歸零，恢復正常，舊靜音值不影響新載入，無JS錯誤。
 - 未測／限制：file://被測試機管理政策ERR_BLOCKED_BY_ADMINISTRATOR阻擋，無法宣稱本機雙擊已驗證；未實際喇叭聆聽，未確認使用者電腦音量／分頁靜音。已下載的舊HTML不會自動更新，需重新下載main版本。
 - 本輪僅針對使用者確認的第1點，不宣稱其他八項已全面符合主觀效果。
+
+<a id="v1-19"></a>
 
 ### V1-19｜限定九項介面與聲音調整
 
@@ -46,11 +54,15 @@
 - 實測Chromium：首次標題按鈕、上移追蹤按鈕實際點擊、九處足跡熱區、鹿／熊演出音效時機、記者對話框與嘴型元素、三關主線、兩種守衛失敗、棄救記者檢查點、野果／蛋糕重試、漢堡兩段演出、雙結局及存檔繼續，無JS錯誤。另目視檢查對話框與守衛新圖。
 - 未測：實際喇叭聽感、不同使用者瀏覽器的自動播放授權、公開部署。保持原有其餘故事與重試流程。
 
+<a id="v1-18"></a>
+
 ### V1-18｜還原最初V1配樂與單一前導按鈕
 
 - 還原V1-1原始旋律、節奏、波形、主旋律0.017與低音0.021增益，取代後續場景旋律及V1-17放大設定；保留點擊解鎖音訊與新版靜音設定。
 - 前導下方只留「略過前導」；播完後換成「開始追蹤」。移除繼續播放選項；播放失敗以自動前進的分鏡替代，不新增第二個按鈕。
 - 驗證：直接比對V1-1旋律、節奏與tick程式一致；Chromium檢查標題音樂啟動、前導實際自動播放、單一按鈕、播放結束與備用分鏡自動前進，無JS錯誤。未進行實際喇叭聽感評估。
+
+<a id="v1-17"></a>
 
 ### V1-17｜配樂音量與標題／前導啟動
 
@@ -59,11 +71,15 @@
 - 新版聲音偏好不沿用舊靜音資料；載入／繼續存檔不再覆蓋目前聲音設定。新版明確關閉聲音仍會保留。
 - Chromium以需使用者操作的播放政策驗證：舊靜音資料情境、標題啟動、前導影片時間實際前進且音樂排程持續、增益值、靜音／恢復、無JavaScript錯誤。未進行實際喇叭聽感與公開部署測試。
 
+<a id="v1-16"></a>
+
 ### V1-16｜標題背景音樂啟動
 
 - 保留原本全部SCORES旋律與場景配樂，未更換音樂。
 - 載入標題時嘗試播放；瀏覽器限制時，首次點擊或Enter／空白鍵解鎖，無需先按開始遊戲。聲音按鈕顯示播放提示；使用者關閉聲音後不會被其他點擊強制開啟。
 - Chromium以需使用者操作的播放政策實測：標題點擊後AudioContext running、tension配樂計時器啟動，靜音／保持靜音／恢復及進入前導正常，無JS錯誤。未進行實際聽感評估。
+
+<a id="v1-15"></a>
 
 ### V1-15｜移除中文配音
 
@@ -74,121 +90,149 @@
 - 驗證：JavaScript語法檢查；Chromium實際啟動序幕、三關及結局渲染，確認無配音按鈕、無語音呼叫、音樂啟動及靜音／恢復、無JavaScript錯誤。
 - 限制：本輪未重跑完整解謎通關，未進行實際聽感評估；V2未修改。
 
+<a id="v1-14"></a>
+
 ### V1-14｜全場景保鑣定稿
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/d0351a9)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-14)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/d0351a9)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-14)。
 - **需求：** 保鑣要更兇、小眼銳利、鷹勾鼻，且所有保鑣畫面都須統一。
 - **實際修改：** 替換全部11張相關圖，含上版未更新的同行鏡頭、野果追豬與第一人稱黑袖；年輕記者維持不同造型。
 - **驗證紀錄：** 逐張目視覆核；自動確認11個圖像鍵更新、其餘20張未動、遊戲邏輯／CSS／MP4未改；Chromium解碼31張圖及檢查場景對應，另測熊／鹿重試、豬足跡、前導及雙結局，無JavaScript錯誤。
 - **後續／限制：** 取代V1-13尚未完成的同行鏡頭編修。
 
+<a id="v1-13"></a>
+
 ### V1-13｜熊／鹿失敗與保鑣區分
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/fa8a5db)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-13)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/fa8a5db)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-13)。
 - **需求：** 熊路線需獨立防熊噴霧失敗圖；鹿路線不能誤用記者，保鑣與記者須區分。
 - **實際修改：** 新增熊圖與失敗流程，替換鹿群追蹤者，調整8張相關圖。
 - **驗證紀錄：** 實際操作熊／鹿故事演出、失敗與重試，確認豬足跡仍通關；檢查31張圖解碼及8個更新對應。
 - **後續／限制：** 當時有一張同行鏡頭被圖片工具拒絕編修而沿用原圖，後於V1-14補齊。
 
+<a id="v1-12"></a>
+
 ### V1-12｜前導與雙結局角色
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/83a278f)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-12)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/83a278f)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-12)。
 - **需求：** 前導仍見背包豬；兩種結局需同時呈現保鑣與記者。
 - **實際修改：** 修正實際MP4第16～20秒的舊鏡頭；湖畔加入保鑣，豪宅加入兩人抱賞金；THE END移到上緣避免擋臉。
 - **驗證紀錄：** 檢查MP4第18秒、20秒片長、前四幕中點像素一致、結束進第一關及A／B結局載入；無JavaScript錯誤。
 - **後續／限制：** 此版替換影片本身，並非只改封面或靜態圖。
 
+<a id="v1-11"></a>
+
 ### V1-11｜直接開始與高畫質羊圈
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/d3566b9)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-11)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/d3566b9)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-11)。
 - **需求：** 開局仍被舊進度判為覆寫；羊群逃出畫面過於模糊。
 - **實際修改：** 開始遊戲一律直接進序幕並備份原進度；羊群圖由836×470重製為1672×941。
 - **驗證紀錄：** 五種開局存檔情況、三種繼續情況，以及開羊圈載入新圖後回兩束繩索救援，均已實測。
 - **後續／限制：** 取代V1-10仍依進度詢問覆寫的作法。
 
+<a id="v1-10"></a>
+
 ### V1-10｜足跡與故事連續性
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/5e2e0c6)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-10)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/5e2e0c6)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-10)。
 - **需求：** 修正足跡點不到、山洞演出重複、車未翻覆、人物混淆與漢堡成功跳接。
 - **實際修改：** 字幕不再擋點擊；熊掌與叫聲取代狼；更新15張圖；新增吃漢堡與同行；記錄實際進度旗標。
 - **驗證紀錄：** 實測足跡九個位置、錯路、救援與食物失敗重試、雙結局、存檔、音訊波形及三種桌面尺寸。
 - **後續／限制：** 覆寫判定仍不符使用需求，後於V1-11直接移除；MP4殘留背包豬後於V1-12修正。
 
+<a id="v1-9"></a>
+
 ### V1-9｜字幕、游標與環境音
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/bcbb1fe)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-9)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/bcbb1fe)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-9)。
 - **需求：** 字幕按鈕不夠清楚、游標回退、環境缺少細微動態與聲音。
 - **實際修改：** 統一大型按鈕與DOM游標；加入環境微動、原創音效、本機台灣華語朗讀支援；更新主要記者圖。
 - **驗證紀錄：** 當時已記錄桌面介面、游標、前導、環境／聲音開關、全螢幕、關卡、雙結局與存檔測試。
 - **後續／限制：** 測試機無本機台灣語音，未宣稱真實朗讀聽感通過；V2未同步此版。
 
+<a id="v1-8"></a>
+
 ### V1-8｜穩定前導鏡頭
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/ac414fe)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-8)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/ac414fe)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-8)。
 - **需求：** 字幕略下移，前導持續鏡頭運動造成不適。
 - **實際修改：** 調整字幕位置，重剪固定鏡位MP4，移除平移、推鏡與縮放，只保留淡入淡出。
 - **驗證紀錄：** 歷史驗證細節保留於此提交的README及差異。
 - **後續／限制：** 後續V2由本版分出。
 
+<a id="v1-7"></a>
+
 ### V1-7｜記者命名
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/36993f4)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-7)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/36993f4)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-7)。
 - **需求：** 記者需要較自然、有質感的西方幽默名字。
 - **實際修改：** 統一更名為克里斯・培根。
 - **驗證紀錄：** 歷史驗證細節見對應提交。
 - **後續／限制：** 後續角色圖與對話沿用此姓名。
 
+<a id="v1-6"></a>
+
 ### V1-6｜電腦版與割繩救援
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/a45a619)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-6)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/a45a619)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-6)。
 - **需求：** 維持電腦版、重試不要重聽故事與開背包、繩索要清楚且用刀割。
 - **實際修改：** 固定桌面構圖，調整重試檢查點、大型繩束與救援刀熱區，補強關鍵場景清晰度。
 - **驗證紀錄：** 歷史紀錄包含守衛／棄救／食物重試、刀具熱區、割繩及結局檢查。
 - **後續／限制：** 重整頁面的章節存檔恢復與局部重試分開處理。
 
+<a id="v1-5"></a>
+
 ### V1-5｜故事銜接與救援選擇
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/69536e8)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-5)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/69536e8)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-5)。
 - **需求：** 補強智能車雨中翻覆、記者遭遇、救援選擇、食物來源與安全結局地點。
 - **實際修改：** 加入前後銜接的記者對話、羊圈線索、棄救失敗、背包食物、原創煞車聲與場景配樂，調整電影字幕。
 - **驗證紀錄：** 當時紀錄包含前導、記者、羊圈、棄救、三食物、湖畔雙結局與存檔檢查。
 - **後續／限制：** 之後的視覺、重試及背包豬修正由後續版本接續。
 
+<a id="v1-4"></a>
+
 ### V1-4｜蛋糕失敗演出
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/1d6ed48)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-4)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/1d6ed48)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-4)。
 - **需求：** 對話框文字難讀，蛋糕成功不合理。
 - **實際修改：** 改善對話框對比；蛋糕改為愛心、撲倒、追兵包圍的失敗序列。
 - **驗證紀錄：** 歷史驗證細節見對應提交。
 - **後續／限制：** 當時仍保留新遊戲覆寫確認，V1-11才移除。
 
+<a id="v1-3"></a>
+
 ### V1-3｜畫面內操作與全螢幕
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/4acd802)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-3)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/4acd802)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-3)。
 - **需求：** 把操作放回遊戲畫面，提供全螢幕、清楚結局與失敗重試。
 - **實際修改：** 操作列移入螢幕、加入全螢幕和失敗覆蓋層，強化THE END。
 - **驗證紀錄：** 歷史驗證細節見對應提交。
 - **後續／限制：** 後續字幕與結局避臉位置持續調整。
 
+<a id="v1-2"></a>
+
 ### V1-2｜原創電影美術與前導
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/caae84d)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-2)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/caae84d)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-2)。
 - **需求：** 提升原創電影動畫質感，加入影片及更合乎情境的選擇。
 - **實際修改：** 整合原創場景與內嵌前導，調整故事結果及互動呈現。
 - **驗證紀錄：** 歷史驗證細節見對應提交。
 - **後續／限制：** 後續仍持續修正人物、前導與場景連續性。
 
+<a id="v1-1"></a>
+
 ### V1-1｜三關初版
 
-- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/400a11c)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V1-1)。
+- **程式版本：** [{sha}](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/400a11c)；[版本快照](https://github.com/vitas9313-sketch/the-great-pig-escape/tree/V1-1)。
 - **需求：** 以簡單三關故事冒險取代舊植物模擬器。
 - **實際修改：** 建立新遊戲標題、前導、三關互動、錯誤重試、雙結局及本機存檔。
 - **驗證紀錄：** 歷史驗證細節見對應提交。
 - **後續／限制：** 這是新遊戲初版，不代表後續美術與流程修正已完成。
 
-## V2｜局部動態試作
+## V2｜已移除的局部動態試作（歷史紀錄）
 
-- **提交：** [185730a](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/commit/185730a)；[版本快照](https://github.com/vitas9313-sketch/a-terrible-time-to-garden/tree/V2)。
+- **提交：** [185730a](https://github.com/vitas9313-sketch/the-great-pig-escape/commit/185730a)；Tag及分支已移除，不再提供版本入口。
 - **基底：** V1-8，不是V1-14。
 - **內容：** 與V1分離的局部角色、動作及環境動畫試作，保持獨立存檔與分支。
 - **限制：** 尚未合入V1-9～V1-14後續角色圖、故事與錯誤修正；不宣稱全部場景已成為完整角色動畫。
@@ -198,3 +242,8 @@
 
 - 專案首頁、規格與本履歷屬開發文件；不以繳交稿或個人資料欄位替代正式規格。
 - 已移除繳交用途的文件與截圖目錄，歷史提交保留；本次整理不修改遊戲、不移動既有標籤。
+
+
+## 版本入口整理（不增加遊戲版號）
+
+依使用者要求移除V2 Tag及feature/pig-game-v2分支，保留V1-1～V1-22。逐一核對22個V1遠端Tag的實際提交與index.html，未發現Tag指錯提交；README原有V1-15以後未設可點版本連結，且較早連結會進入舊README，易被誤認為錯版。現改為版本號連到本履歷固定錨點、程式碼連到對應Tag的index.html，並顯示實際提交連結。遊戲、素材與GitHub Pages來源不變。
