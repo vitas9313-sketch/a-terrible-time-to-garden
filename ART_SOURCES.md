@@ -193,3 +193,12 @@
 - `mansion`：`exec-fc848531-879b-41a2-a48a-264477a67df7.png`，1672×941；SHA-256 `05a0b596f9dfedba60484cd36eee4f1439031a2b16e5468fcadeeeb84bd53202`。
 - `escape`：`exec-3a3af019-2e25-4b0c-8b52-6434fffa119e.png`，1672×941；SHA-256 `8db70c0e16d5baef9925a6a4ed309363a1d0190bf115fcfbcdbc1fd0d4b7c7f4`。
 - `cake_rush`：`exec-a7cc785d-3ef7-4bff-a766-c9a8852dfa7a.png`，1672×941；SHA-256 `ebc3964235ba1c3a902d8030f0642d1b294230f4f1d068680c3f72fa2ec16de9`。
+
+
+## V1-19：守衛表情與記者嘴型
+
+- 洞穴守衛：以本專案camp_goats原圖進行AI原創局部編修；提示限定凶狠瞇眼、皺眉、凌亂毛髮與磨損奇幻皮衣，保持其餘構圖，不指定既有作品、藝術家、演員或真實族群。
+- 生成檔：`/workspace/generated_images/exec-03ed63f2-0e65-4860-9389-d494920deede.png`；壓縮WebP後內嵌camp_goats，其他30張圖未更換。
+- 內嵌WebP SHA-256：`e7707497069fe83f4a5d1d6321678721578f45acbb536f973c0e866e5d7d68ed`。
+- 記者嘴型：程式原創SVG疊層與CSS開闔，僅在記者開場對話顯示；不是完整人物逐格影片。
+- 成功／失敗旋律與長熊吼均為本專案Web Audio原創合成，未使用外部聲音素材或中文TTS。
